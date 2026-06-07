@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파과 - Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="story-body">
+
+    <!-- 🎬 [NEW] 첫 진입 커버 섹션 (기존 인트로 대체) -->
+    <header class="intro-cover">
+        <!-- 배경 이미지 (기존 인트로에 쓰인 배경 이미지명을 매칭해주세요) -->
+        <div class="cover-bg"></div> 
+        
+        <!-- 조각나는 효과를 위한 타이포 박스 -->
+        <div class="logo-wrap">
+            <h1 class="main-title" id="brokenTitle">파과</h1>
+        </div>
+        
+        <!-- 스크롤 유도 문구 -->
+        <div class="scroll-arrow">
+            <p>스크롤해서 이야기로</p>
+            <div class="arrow-icon">↓</div>
+        </div>
+    </header>
+
+    <!-- 상단 고정 메뉴 바 (첫 화면에서는 숨겨져 있다가 스크롤하면 나타나도록 CSS 처리) -->
+    <nav class="top-nav" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="cursor: pointer;">
+        <div class="logo">파과</div>
+        <div class="nav-links">
+            <a href="story.html" class="active">STORY</a>
+            <a href="character.html">CHARACTER</a>
+            <a href="info.html">INFO</a>
+            <a href="https://product.kyobobook.co.kr/detail/S000001808685" target="_blank">BUY</a>
+        </div>
+    </nav>
+
+    <!-- 우측 고정 챕터 네비게이션 -->
+    <nav class="side-nav">
+        <a href="#chapter1">1</a>
+        <a href="#chapter2">2</a>
+        <a href="#chapter3">3</a>
+        <a href="#chapter4">4</a>
+        <a href="#chapter5">5</a>
+    </nav>
+
+    <!-- 스토리 본문 섹션 (배경 전체 Black) -->
+    <main class="story-container">
+        
+        <!-- 🎬 CHAPTER 1 : 조각 -->
+        <section id="chapter1" class="story-panel cinematic-chapter">
+            <span class="chapter-num">CHAPTER 1</span>
+            <h2>조각</h2>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene1-1.jpg" alt="장면 1-1">
+                <div class="text-box"><p>60대 여성 킬러 조각.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene1-2.jpg" alt="장면 1-2">
+                <div class="text-box"><p>그녀는 냉철하고 노련한 업계의 대모다.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene1-3.jpg" alt="장면 1-3">
+                <div class="text-box"><p>수많은 세월 동안 단 한 번의 오차도 없이 의뢰를 처리해 온 그녀.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene1-4.jpeg" alt="장면 1-4">
+                <div class="text-box"><p>하지만 흐르는 시간 속에서 그녀의 칼날도 조금씩 무뎌지기 시작한다.</p></div>
+            </div>
+        </section>
+
+        <!-- 🎬 CHAPTER 2 : 투우의 등장 -->
+        <section id="chapter2" class="story-panel cinematic-chapter">
+            <span class="chapter-num">CHAPTER 2</span>
+            <h2>투우의 등장</h2>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene2-1.jpg" alt="장면 2-1">
+                <div class="text-box"><p>조각의 곁을 맴돌며 예리하게 숨통을 조여오는 새로운 인물.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene2-2.jpg" alt="장면 2-2">
+                <div class="text-box"><p>숨 막히는 긴장감 속에서 조각에게 자꾸만 시비를 거는 투우.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene2-3.jpeg" alt="장면 2-3">
+                <div class="text-box"><p>그의 도발은 단순한 장난이 아닌, 거대한 폭풍의 전조였다.</p></div>
+            </div>
+        </section>
+
+        <!-- 🎬 CHAPTER 3 : 조각의 부상 그리고 강 박사와의 만남 -->
+        <section id="chapter3" class="story-panel cinematic-chapter">
+            <span class="chapter-num">CHAPTER 3</span>
+            <h2>조각의 부상 그리고 강 박사와의 만남</h2>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene3-1.jpg" alt="장면 3-1">
+                <div class="text-box"><p>노화로 인해 이전 같지 않은 몸. 한순간의 실수로 조각은 치명적인 부상을 입고 의식을 잃은 채 강 박사의 병원으로 실려 온다.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene3-2.jpg" alt="장면 3-2">
+                <div class="text-box"><p>정신이 들자마자 킬러로서의 본능적인 방어기제와 극도의 경계심으로 눈앞의 강 박사를 거칠게 몰아붙이는 조각.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene3-3.jpg" alt="장면 3-3">
+                <div class="text-box"><p>차가운 무기를 목에 겨눈 숨 막히는 대치 속에서, 두 사람의 기묘하고도 위태로운 인연이 시작된다.</p></div>
+            </div>
+        </section>
+
+        <!-- 🎬 CHAPTER 4 : 지키고 싶은 것들이 생긴 조각 -->
+        <section id="chapter4" class="story-panel cinematic-chapter">
+            <span class="chapter-num">CHAPTER 4</span>
+            <h2>지키고 싶은 것들이 생긴 조각</h2>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene4-1.jpg" alt="장면 4-1">
+                <div class="text-box"><p>늘 피와 어둠뿐이었던 조각의 삶 속에, 하나뿐인 어린 딸을 품에 소중히 안아 지켜내는 강 박사의 따뜻하고 무해한 일상이 들어오기 시작한다.</p></div>
+            </div>
+
+            <div class="scene-wrap dynamic-blur">
+                <img src="scene4-2.jpg" alt="장면 4-2">
+                <div class="text-box"><p>그들 부녀가 함께 나누는 따스한 미소와 평화를 곁에서 지켜보며, 조각은 평생 느껴보지 못한 감정의 일렁임을 겪는다. 쇠잔해져 가던 킬러의 마음속에 처음으로 '파괴'가 아닌 '지키고 싶은 마음'이 태어난 순간이었다.</p></div>
+            </div>
+        </section>
+
+        <!-- 🎬 CHAPTER 5 : 소중한 것들을 지키기 위한 마지막 혈투 -->
+        <section id="chapter5" class="story-panel">
+            <span class="chapter-num">CHAPTER 5</span>
+            <h2>소중한 것들을 지키기 위한 마지막 혈투</h2>
+            <div class="scene-wrap dynamic-blur">
+                <img src="https://via.placeholder.com/800x500/222222/555555?text=Chapter+5+Image" alt="장면 5">
+                <div class="text-box"><p>강박사의 딸을 지키기 위한 조각과 그녀를 방해하려는 투우의 마지막 혈투가 시작된다.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 인터랙션 스크립트 -->
+    <script>
+        // 1. 타이포 조각나며 투명해지는 효과 + 네비게이션 표시 컨트롤
+        const brokenTitle = document.getElementById('brokenTitle');
+        const topNav = document.querySelector('.top-nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollPos = window.scrollY;
+            let windowHeight = window.innerHeight;
+            
+            // 타이포 제어 비율
+            let ratio = scrollPos / (windowHeight * 0.7);
+            if (ratio > 1) ratio = 1;
+            
+            // 글자 투명도 및 조각나는 듯한 산란(글자 간격 확장 + 흐림) 효과
+            brokenTitle.style.opacity = 1 - ratio;
+            brokenTitle.style.letterSpacing = `${ratio * 50}px`;
+            brokenTitle.style.filter = `blur(${ratio * 10}px)`;
+            
+            // 첫 스크롤 시 상단 네비게이션 자연스럽게 노출
+            if (scrollPos > windowHeight * 0.3) {
+                topNav.classList.add('visible');
+            } else {
+                topNav.classList.remove('visible');
+            }
+        });
+
+        // 2. [핵심] 화면 중앙에 있을 때만 선명해지는 실시간 감시 (Intersection Observer API 대체)
+        const blurElements = document.querySelectorAll('.dynamic-blur');
+
+        function checkCenterBlur() {
+            const triggerPoint = window.innerHeight / 2; // 화면 정중앙선 기준
+            
+            blurElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const elCenter = rect.top + (rect.height / 2);
+                
+                // 정중앙선으로부터 이 요소가 얼마나 떨어져 있는지 계산
+                const distanceFromCenter = Math.abs(triggerPoint - elCenter);
+                
+                // 멀어질수록 필터값과 투명도를 낮춤 (가운데에 완벽히 오면 distance = 0)
+                let blurAmount = (distanceFromCenter / window.innerHeight) * 12; // 흐림 최대치 조절
+                let opacityAmount = 1 - (distanceFromCenter / window.innerHeight) * 1.5; // 투명도 감소율 조절
+                
+                if (opacityAmount < 0) opacityAmount = 0;
+                if (blurAmount > 10) blurAmount = 10;
+                
+                // 요소 내의 이미지와 글상자에 각각 적용
+                const img = el.querySelector('img');
+                const text = el.querySelector('.text-box');
+                
+                if (img) {
+                    img.style.filter = `blur(${blurAmount}px)`;
+                    img.style.opacity = opacityAmount;
+                }
+                if (text) {
+                    text.style.filter = `blur(${blurAmount}px)`;
+                    text.style.opacity = opacityAmount;
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkCenterBlur);
+        window.addEventListener('resize', checkCenterBlur);
+        checkCenterBlur(); // 초기 실행
+    </script>
+</body>
+</html>
