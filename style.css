@@ -20,7 +20,7 @@ a {
 }
 
 /* ===================================================
-   🎬 2. 첫 진입 인트로 커버 섹션 (화면 꽉 차게)
+   🎬 2. 첫 진입 인트로 커버 섹션 (main-bg.jpeg 세팅 완료)
    =================================================== */
 .intro-cover {
     position: relative;
@@ -34,16 +34,16 @@ a {
     z-index: 10;
 }
 
-/* 배경 이미지 세팅 (스토리 페이지 배경과 부드럽게 이어지도록 처리) */
+/* 🔗 요청하신 거울 속 조각 스틸컷 이미지 매칭 */
 .intro-cover .cover-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), #000000), url('intro-bg.jpg') no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), #000000), url('main-bg.jpeg') no-repeat center center;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 /* 파과 대형 타이포 */
@@ -58,7 +58,6 @@ a {
     color: #ffffff;
     margin: 0;
     letter-spacing: 4px;
-    /* 스크롤 시 조각나며 흐려지는 효과를 위한 부드러운 전환 인터벌 */
     transition: transform 0.1s ease-out, opacity 0.1s ease-out, filter 0.1s ease-out;
 }
 
@@ -89,7 +88,6 @@ a {
 /* ===================================================
    🧭 3. 네비게이션 바 & 사이드 바
    =================================================== */
-/* 상단바: 첫 커버 화면에서는 안 보이다가 스크롤 내리면 자바스크립트로 노출 */
 .top-nav {
     position: fixed;
     top: 0;
@@ -131,7 +129,6 @@ a {
     color: #e50914;
 }
 
-/* 우측 고정 챕터 내비 */
 .side-nav {
     position: fixed;
     right: 40px;
@@ -197,7 +194,6 @@ a {
     text-align: center;
 }
 
-/* 🎬 시네마틱 세로형 씬 래퍼 */
 .scene-wrap {
     width: 100%;
     margin-bottom: 150px;
@@ -213,7 +209,6 @@ a {
     border-radius: 2px;
 }
 
-/* 텍스트 상자 스타일 (그림자 완전 제거 및 정돈) */
 .scene-wrap .text-box {
     width: 100%;
     max-width: 650px;
@@ -226,7 +221,7 @@ a {
     line-height: 1.9;
     color: #ffffff;
     word-break: keep-all;
-    text-shadow: none !important; /* 그림자 강제 제거 */
+    text-shadow: none !important; /* 그림자 완전 삭제 */
 }
 
 /* ===================================================
@@ -235,5 +230,5 @@ a {
 .dynamic-blur img,
 .dynamic-blur .text-box {
     transition: filter 0.25s ease-out, opacity 0.25s ease-out;
-    will-change: filter, opacity; /* 부드러운 가속 보장 */
+    will-change: filter, opacity;
 }
