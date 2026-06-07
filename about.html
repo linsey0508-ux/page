@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파과 - About Author</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 160px auto 100px auto;
+            padding: 0 20px;
+        }
+        .author-profile {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            border-bottom: 1px solid #222;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+        .author-img {
+            width: 240px;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+        .author-info {
+            flex: 1;
+        }
+        .author-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .author-job {
+            font-size: 16px;
+            color: #e50914;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table th, .info-table td {
+            text-align: left;
+            padding: 8px 0;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .info-table th {
+            width: 80px;
+            color: #888;
+            font-weight: normal;
+        }
+        .info-table td {
+            color: #fff;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            letter-spacing: 1px;
+            border-left: 3px solid #e50914;
+            padding-left: 12px;
+        }
+    </style>
+</head>
+<body style="background-color: #000000; color: #ffffff;">
+
+    <!-- 상단 고정 메뉴 바 -->
+    <nav class="top-nav visible" style="position: fixed; top: 0; left: 0; width: 100%; padding: 30px 60px; display: flex; justify-content: space-between; align-items: center; z-index: 100; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);">
+        <div class="logo" style="font-size: 24px; font-weight: 700; letter-spacing: 2px;">파과</div>
+        <div class="nav-links">
+            <a href="index.html" style="font-size: 14px; margin-left: 40px; letter-spacing: 1px; transition: color 0.3s;">STORY</a>
+            <a href="character.html" style="font-size: 14px; margin-left: 40px; letter-spacing: 1px; transition: color 0.3s;">CHARACTER</a>
+            <a href="about.html" class="active" style="font-size: 14px; margin-left: 40px; letter-spacing: 1px; transition: color 0.3s; color: #e50914;">ABOUT</a>
+            <a href="https://product.kyobobook.co.kr/detail/S000001808685" target="_blank" style="font-size: 14px; margin-left: 40px; letter-spacing: 1px; transition: color 0.3s;">BUY</a>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <!-- 👤 작가 프로필 섹션 -->
+        <section class="author-profile">
+            <img src="스크린샷 2026-06-07 오후 9.50.38.jpg" alt="구병모 작가" class="author-img">
+            <div class="author-info">
+                <h1 class="author-name">구병모</h1>
+                <p class="author-job">소설가</p>
+                
+                <table class="info-table">
+                    <tr>
+                        <th>출생</th>
+                        <td>1976년, 서울특별시</td>
+                    </tr>
+                    <tr>
+                        <th>학력</th>
+                        <td>경희대학교 국어국문학 학사</td>
+                    </tr>
+                    <tr>
+                        <th>데뷔</th>
+                        <td>2009년 소설 '위저드 베이커리'</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- 🏆 수상 내역 섹션 -->
+        <section>
+            <h2 class="section-title">수상 내역</h2>
+            <table class="info-table">
+                <tr>
+                    <th style="width: 100px;">2022년</th>
+                    <td>제16회 김유정문학상</td>
+                </tr>
+                <tr>
+                    <th>2008년</th>
+                    <td>제2회 창비청소년문학상 (위저드 베이커리)</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
