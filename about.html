@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>파과 - About Author</title>
+    <title>파과 - About</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -52,7 +52,7 @@
             line-height: 1.6;
         }
         .info-table th {
-            width: 80px;
+            width: 100px;
             color: #888;
             font-weight: normal;
         }
@@ -62,10 +62,39 @@
         .section-title {
             font-size: 22px;
             font-weight: 700;
-            margin: 40px 0 20px 0;
+            margin: 60px 0 25px 0;
             letter-spacing: 1px;
             border-left: 3px solid #e50914;
             padding-left: 12px;
+        }
+        
+        /* 📚 도서 및 영화 정보 레이아웃 (기존 info 페이지 스타일 유지) */
+        .info-media-block {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+            align-items: flex-start;
+        }
+        .media-poster {
+            width: 180px;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        .media-desc {
+            flex: 1;
+        }
+        .media-desc h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+        .media-desc p {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.8;
+            word-break: keep-all;
         }
     </style>
 </head>
@@ -83,7 +112,10 @@
     </nav>
 
     <main class="about-container">
-        <!-- 👤 작가 프로필 섹션 -->
+        
+        <!-- ===================================================
+           👤 SECTION 1 : 작가 프로필
+           =================================================== -->
         <section class="author-profile">
             <img src="스크린샷 2026-06-07 오후 9.50.38.jpg" alt="구병모 작가" class="author-img">
             <div class="author-info">
@@ -107,12 +139,12 @@
             </div>
         </section>
 
-        <!-- 🏆 수상 내역 섹션 -->
-        <section>
-            <h2 class="section-title">수상 내역</h2>
+        <!-- 🏆 수상 내역 -->
+        <section style="border-bottom: 1px solid #222; padding-bottom: 50px;">
+            <h2 class="section-title" style="margin-top: 0;">작가 수상 내역</h2>
             <table class="info-table">
                 <tr>
-                    <th style="width: 100px;">2022년</th>
+                    <th>2022년</th>
                     <td>제16회 김유정문학상</td>
                 </tr>
                 <tr>
@@ -121,6 +153,42 @@
                 </tr>
             </table>
         </section>
+
+
+        <!-- ===================================================
+           📚 SECTION 2 : 기존 INFO 페이지 콘텐츠 (도서 & 영화)
+           =================================================== -->
+        <section>
+            <!-- 1. 원작 도서 정보 -->
+            <h2 class="section-title">원작 도서 정보</h2>
+            <div class="info-media-block">
+                <img src="book-cover.jpg" alt="파과 소설 표지" class="media-poster">
+                <div class="media-desc">
+                    <h3>소설 『파과』 <span>(구병모 저)</span></h3>
+                    <p>
+                        2013년 출간 이후 독자들의 압도적인 찬사를 받은 구병모 작가의 대표작. 
+                        빛나는 서사와 강렬한 미문으로 65세 여성 킬러 '조각'의 무너져가는 몸과 
+                        그 안에서 새롭게 피어나는 연민의 감정을 섬세하게 그려냈습니다. 
+                        소멸의 눈부신 아름다움을 담아낸 한국 문학의 독보적인 서사시입니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. 영화 정보 -->
+            <h2 class="section-title">영화 정보</h2>
+            <div class="info-media-block">
+                <img src="movie-poster.jpg" alt="파과 영화 포스터" class="media-poster">
+                <div class="media-desc">
+                    <h3>영화 『파과』</h3>
+                    <p>
+                        구병모 작가의 동명 소설을 원작으로 하여 스크린으로 옮겨온 시네마틱 마스터피스. 
+                        원작 특유의 차갑고도 뜨거운 미학적 액션과 인물들의 깊이 있는 내면을 
+                        감각적인 영상미와 묵직한 연출로 담아내어 평단과 관객의 큰 호평을 받았습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
